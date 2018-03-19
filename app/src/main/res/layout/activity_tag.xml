@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amplify.utils.SoftKeyboardHandledLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:TagsEditText="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:background="@color/white">
+
+    <com.amplify.utils.StatusBarView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/statusbar_transparent" />
+
+    <TableLayout
+        android:layout_weight="1"
+        android:id="@+id/tableLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/white"
+       >
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+
+                <LinearLayout
+                    android:layout_marginTop="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/imgBack"
+                        android:layout_width="20dip"
+                        android:layout_height="12dip"
+                        android:layout_gravity="center"
+                        android:background="@drawable/icon_back" />
+                </LinearLayout>
+
+                <ScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="6dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:orientation="horizontal">
+
+                            <com.amplify.widgets.TextViewSemibold
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Good Job!"
+                                android:textColor="@color/blue"
+                                android:textSize="35sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <com.amplify.widgets.TextViewRegular
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="Your presence is more"
+                            android:textColor="@color/blue"
+                            android:textSize="22sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:orientation="horizontal">
+
+                            <com.amplify.widgets.TextViewRegular
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="amplified using"
+                                android:textColor="@color/blue"
+                                android:textSize="22sp" />
+
+                            <com.amplify.widgets.TextViewBold
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=" #tags"
+                                android:textColor="@color/red"
+                                android:textSize="22sp" />
+                        </LinearLayout>
+
+                        <com.amplify.widgets.TextViewRegular
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="35dp"
+                            android:text="Tell us your #tags"
+                            android:textColor="@color/black"
+                            android:textSize="25sp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:orientation="horizontal"
+                            android:visibility="visible">
+
+                            <com.amplify.widgets.TextViewBold
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:text=" #Tags"
+                                android:textColor="@color/blue"
+                                android:textSize="22sp"
+                                android:textStyle="bold" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:background="@drawable/bkg_grey"
+                                android:orientation="horizontal"
+                                android:paddingBottom="5dp"
+                                android:paddingLeft="15dp"
+                                android:paddingRight="15dp"
+                                android:paddingTop="5dp">
+
+                                <com.amplify.widgets.TextViewBold
+                                    android:id="@+id/txtTagCnt"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="2"
+                                    android:textColor="@color/black"
+                                    android:textSize="12sp" />
+
+                                <com.amplify.widgets.TextViewBold
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="/10"
+                                    android:textColor="@color/black"
+                                    android:textSize="12sp" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                       <!-- <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="10dp"
+                            android:orientation="horizontal"
+                            android:weightSum="10">
+
+                            <AutoCompleteTextView
+                                android:id="@+id/autoCompleteTextView"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@android:color/transparent"
+                                android:backgroundTint="@color/white"
+                                android:ems="10"
+                                android:hint="tags"
+                                android:imeOptions="actionDone"
+                                android:padding="5dp"
+                                android:singleLine="true"
+                                android:textSize="14sp"
+                                android:digits="qwertyuioplkjhgfdsazxcvbnmQWERTYUIOPLKJHGFDSAZXCVBNM "/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <android.support.v7.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+                                android:id="@+id/rv_tag"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginTop="5dp" />
+                        </LinearLayout>
+-->
+
+                        <mabbas007.tagsedittext.TagsEditText
+                            android:layout_marginTop="5dp"
+                            android:background="@android:color/transparent"
+                            android:id="@+id/tagsEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            TagsEditText:allowSpaceInTag="true"
+                            TagsEditText:tagsBackground="@drawable/square_default"
+                            TagsEditText:tagsCloseImageRight="@drawable/tag_close"
+                            android:focusable="true"/>
+
+                        <View
+                            android:layout_marginTop="10dp"
+                            android:id="@+id/viewAddingTag"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dip"
+                            android:background="@color/grey"
+                            android:visibility="visible" />
+
+                       <!-- <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="2dp"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@android:color/transparent"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <android.support.v7.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+                                android:id="@+id/rvMain"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:background="@android:color/transparent" />
+                        </LinearLayout>-->
+
+                        <View
+                            android:id="@+id/viewAddedTag"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dip"
+                            android:layout_marginTop="5dp"
+                            android:background="@color/grey"
+                            android:visibility="gone" />
+
+                        <com.amplify.widgets.TextViewRegular
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:text="NOTE:"
+                            android:textColor="@color/black"
+                            android:textSize="12sp" />
+
+                        <com.amplify.widgets.TextViewRegular
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="5dp"
+                            android:text="People will search you by using #tags. So please mention your #tag here."
+                            android:textColor="@color/light_grey"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </ScrollView>
+
+                <RelativeLayout
+                    android:layout_marginBottom="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                <Button
+                    android:layout_alignParentBottom="true"
+                    android:id="@+id/btnNext"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+
+                    android:background="@drawable/btn_next"
+                    android:gravity="center"
+                    android:text="Next"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+                </RelativeLayout>
+            </LinearLayout>
+        </TableRow>
+    </TableLayout>
+</com.amplify.utils.SoftKeyboardHandledLinearLayout>

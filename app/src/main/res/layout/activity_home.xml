@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.amplify.view.Activity.HomeActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linearUnblock"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="visible"
+            android:weightSum="1">
+
+            <com.amplify.utils.StatusBarView
+                android:id="@+id/statusBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gradient" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight=".92">
+
+                <LinearLayout
+                    android:id="@+id/linear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="49dp"
+                        android:background="@mipmap/bg_profile"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/txtAmplify"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight=".70"
+                            android:gravity="center"
+                            android:text="#amplify"
+                            android:textColor="@color/white"
+                            android:textSize="20sp" />
+
+                        <ImageView
+                            android:id="@+id/imgFilter"
+                            android:layout_width="22dp"
+                            android:layout_height="22dp"
+                            android:layout_gravity="center|end"
+                            android:layout_marginRight="20dp"
+                            android:padding="1dp"
+                            android:src="@drawable/icon_filter" />
+                    </FrameLayout>
+
+                    <android.support.design.widget.AppBarLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+                        <android.support.design.widget.TabLayout
+                            android:id="@+id/tabs"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:tabGravity="fill"
+                            app:tabMode="fixed"
+                            app:tabSelectedTextColor="@color/blue"
+                            app:tabIndicatorHeight="3dp"
+                            app:tabTextColor="@color/light_grey" />
+                    </android.support.design.widget.AppBarLayout>
+
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/viewpager"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+                </LinearLayout>
+
+                <FrameLayout
+                    android:id="@+id/contentContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"></FrameLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight=".08"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:weightSum="1.2"
+                android:elevation="20dp">
+
+                <RelativeLayout
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".3"
+                    android:id="@+id/rl_home">
+
+                    <ImageView
+                        android:id="@+id/imgHomeAct"
+                        android:layout_width="23dip"
+                        android:layout_height="23dip"
+                        android:layout_centerInParent="true"
+                        android:paddingTop="4dp"
+                        android:src="@drawable/tab_home_active" />
+
+                    <ImageView
+                        android:id="@+id/imgHome"
+                        android:layout_width="23dip"
+                        android:layout_height="23dip"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="4dp"
+                        android:paddingTop="4dp"
+                        android:src="@drawable/tab_home"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".3"
+                    android:id="@+id/rl_search">
+
+                    <ImageView
+                        android:id="@+id/imgSearch"
+                        android:layout_width="23dip"
+                        android:layout_height="23dip"
+                        android:layout_centerInParent="true"
+                        android:paddingTop="4dp"
+                        android:src="@drawable/tab_search" />
+
+                    <ImageView
+                        android:id="@+id/imgSearchAct"
+                        android:layout_width="23dip"
+                        android:layout_height="23dip"
+                        android:layout_centerInParent="true"
+                        android:paddingTop="4dp"
+                        android:src="@drawable/tab_search_active"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".3"
+                    android:id="@+id/rl_like">
+
+                    <ImageView
+                        android:id="@+id/imgHeart"
+                        android:layout_width="23dip"
+                        android:layout_height="23dip"
+                        android:layout_centerInParent="true"
+                        android:paddingTop="4dp"
+                        android:src="@drawable/tab_heart" />
+
+                    <ImageView
+                        android:id="@+id/imgHeartAct"
+                        android:layout_width="23dip"
+                        android:layout_height="23dip"
+                        android:layout_centerInParent="true"
+                        android:paddingTop="4dp"
+                        android:src="@drawable/tab_heart_active"
+                        android:visibility="gone" />
+
+                    <RelativeLayout
+                        android:id="@+id/relativeLikeCount"
+                        android:layout_width="18dip"
+                        android:layout_height="18dip"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="45dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/icon_count"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/txtLikeCount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="222"
+                            android:textColor="@color/white"
+                            android:textSize="8sp" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".3"
+                    android:id="@+id/rl_profile">
+
+                    <ImageView
+                        android:id="@+id/img_profile"
+                        android:layout_width="23dip"
+                        android:layout_height="23dip"
+                        android:layout_centerInParent="true"
+                        android:paddingTop="4dp"
+                        android:src="@drawable/tab_profile" />
+
+                    <ImageView
+                        android:id="@+id/img_profileAct"
+                        android:layout_width="23dip"
+                        android:layout_height="23dip"
+                        android:layout_centerInParent="true"
+                        android:paddingTop="4dp"
+                        android:src="@drawable/tab_profile_active"
+                        android:visibility="gone" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearBlock"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+            <include layout="@layout/block_account" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

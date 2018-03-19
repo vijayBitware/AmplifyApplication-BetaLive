@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ffff</color>
+    <color name="colorPrimaryDark">#7452ff</color>
+    <color name="colorAccent">#7452ff</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#363636</color>
+    <color name="Transparent">#00000000</color>
+    <color name="dark_grey">#6a6a6a</color>
+    <color name="grey">#E0DADA</color>
+    <color name="light_grey">#8c8c8c</color>
+    <color name="blue">#7452ff</color>
+    <color name="green">#b9e820</color>
+    <color name="pink">#ed145b</color>
+    <color name="dark_blue">#003471</color>
+    <color name="live_user_bkg">#f4f3f3</color>
+    <color name="red">#ec1144</color>
+
+    <color name="blue_trans">#B37452ff</color>
+    <color name="black_trans">#B3000000</color>
+    <color name="bio_color">#4ed8e7</color>
+
+    <color name="ss_colorPrimary">#9E9E9E</color>
+    <color name="ss_colorPrimaryDark">#616161</color>
+    <color name="ss_colorAccent">#95ff00</color>
+
+    <color name="ss_progress_startColor">#ffffd300</color>
+    <color name="ss_progress_endColor">#ffffcb00</color>
+    <color name="ss_progress_centerColor">#ffffb600</color>
+
+    <color name="ss_secondaryProgress_startColor">#80ffd300</color>
+    <color name="ss_secondaryProgress_endColor">#a0ffcb00</color>
+    <color name="ss_secondaryProgress_centerColor">#80ffb600</color>
+
+    <color name="ss_background_startColor">#809d9e9d</color>
+    <color name="ss_background_endColor">#ff747674</color>
+    <color name="ss_background_centerColor">#ff5a5d5a</color>
+    <color name="statusBar">#4D000000</color>
+    <color name="statusBarTrans">#4D000000</color>
+
+    <color name="text_colour_grey">#c9c9c9</color>
+    <color name="filter_label_normal">#8A8889</color>
+    <color name="filter_label_selected">#221F20</color>
+</resources>

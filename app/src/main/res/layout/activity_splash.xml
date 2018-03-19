@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@mipmap/img_bg_login"
+            android:scaleType="fitXY"/>
+
+        <ImageView
+            android:layout_width="270dip"
+            android:layout_height="270dip"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="115dp"
+            android:src="@drawable/logo_amplifytext" />
+
+    </RelativeLayout>
+
+</LinearLayout>

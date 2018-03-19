@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/ss_background_startColor"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight=".9">
+
+            <ImageView
+                android:id="@+id/imgBack"
+                android:layout_width="20dip"
+                android:layout_height="12dip"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/icon_backarrow" />
+
+            <ImageView
+                android:id="@+id/imgGender"
+                android:layout_width="24dip"
+                android:layout_height="16dip"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/icon_female_sm" />
+
+            <com.amplify.widgets.TextViewRegular
+                android:id="@+id/txtName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:text="Amy ,"
+                android:textColor="#ffffff"
+                android:textSize="15sp" />
+
+            <com.amplify.widgets.TextViewRegular
+                android:id="@+id/txtAge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:text="26"
+                android:textColor="#ffffff"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imgFlag"
+            android:layout_width="0dip"
+            android:layout_height="16dip"
+            android:layout_gravity="center"
+            android:layout_weight=".1"
+            android:src="@drawable/ic_slating_flag" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/ViewOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/bg_overlay"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/linearFlag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <com.amplify.widgets.TextViewRegular
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Report this user"
+            android:textColor="@color/red"
+            android:textSize="17sp" />
+
+        <com.amplify.widgets.TextViewRegular
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Inappropriate Image"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            android:id="@+id/txt_inappropiateImage"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/blue" />
+
+        <com.amplify.widgets.TextViewRegular
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Inappropriate Bio"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            android:id="@+id/txt_inappropiateBio"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/blue" />
+
+        <com.amplify.widgets.TextViewRegular
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Fake Username"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            android:id="@+id/txt_fakeUsername"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/blue" />
+
+        <com.amplify.widgets.TextViewRegular
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Incorrect Gender"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            android:id="@+id/txt_incorrectGender"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/blue" />
+
+        <com.amplify.widgets.TextViewRegular
+            android:id="@+id/txtCancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Cancel"
+            android:textColor="@color/black"
+            android:textSize="17sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+
+            <LinearLayout
+                android:id="@+id/linearProfileView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_prfile_info_new"
+                android:orientation="vertical"
+                android:paddingTop="10dp"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imgLoc"
+                        android:layout_width="15dip"
+                        android:layout_height="20dip"
+                        android:layout_gravity="center"
+                        android:src="@drawable/icon_loction" />
+
+                    <com.amplify.widgets.TextViewRegular
+                        android:id="@+id/txtAddress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:text="Farnborough"
+                        android:textColor="#ffffff"
+                        android:textSize="15sp" />
+
+                    <com.amplify.widgets.TextViewRegular
+                        android:id="@+id/txtDist"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="3dp"
+                        android:text="(5 mi. away)"
+                        android:textColor="#ffffff"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:id="@+id/ll_shortBio">
+                    <com.amplify.widgets.TextViewRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="5dp"
+                        android:text="SHORT BIO"
+                        android:textColor="@color/bio_color"
+                        android:textSize="12sp" />
+
+                    <com.amplify.widgets.TextViewRegular
+                        android:id="@+id/txtSortBio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="5dp"
+                        android:text="What is lorem ipsum? It is simple dummy text used for testing"
+                        android:textColor="#ffffff"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="3dp"
+                    android:paddingLeft="17dp"
+                    android:paddingRight="17dp"
+                    android:paddingTop="3dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/rv_tags">
+                </android.support.v7.widget.RecyclerView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dip"
+                    android:background="@drawable/bg_footer_profile_tab"
+                    android:orientation="horizontal"
+                    android:weightSum="1.2">
+
+                    <RelativeLayout
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".3">
+
+                        <ImageView
+                            android:id="@+id/imgInsta"
+                            android:layout_width="35dip"
+                            android:layout_height="35dip"
+                            android:layout_centerInParent="true"
+                            android:paddingTop="4dp"
+                            android:src="@drawable/instagram_lt" />
+
+                        <ImageView
+                            android:id="@+id/imgInstaAct"
+                            android:layout_width="23dip"
+                            android:layout_height="23dip"
+                            android:layout_centerInParent="true"
+                            android:layout_marginTop="4dp"
+                            android:paddingTop="4dp"
+                            android:src="@drawable/instagram_white"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".3">
+
+                        <ImageView
+                            android:id="@+id/imgTwitter"
+                            android:layout_width="35dip"
+                            android:layout_height="35dip"
+                            android:layout_centerInParent="true"
+                            android:paddingTop="4dp"
+                            android:src="@drawable/twitter_lt" />
+
+                        <ImageView
+                            android:id="@+id/imgTwitterAct"
+                            android:layout_width="35dip"
+                            android:layout_height="35dip"
+                            android:layout_centerInParent="true"
+                            android:paddingTop="4dp"
+                            android:src="@drawable/twitter_white"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".3">
+
+                        <ImageView
+                            android:id="@+id/imgSnapchat"
+                            android:layout_width="35dip"
+                            android:layout_height="35dip"
+                            android:layout_centerInParent="true"
+                            android:paddingTop="4dp"
+                            android:src="@drawable/snapchat_lt" />
+
+                        <ImageView
+                            android:id="@+id/imgSnapchatAct"
+                            android:layout_width="35dip"
+                            android:layout_height="35dip"
+                            android:layout_centerInParent="true"
+                            android:paddingTop="4dp"
+                            android:src="@drawable/snapchat_white"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".3">
+
+                        <ImageView
+                            android:id="@+id/imgKik"
+                            android:layout_width="35dip"
+                            android:layout_height="35dip"
+                            android:layout_centerInParent="true"
+                            android:paddingTop="4dp"
+                            android:src="@drawable/kik_lt" />
+
+                        <ImageView
+                            android:id="@+id/imgKikAct"
+                            android:layout_width="35dip"
+                            android:layout_height="35dip"
+                            android:layout_centerInParent="true"
+                            android:paddingTop="4dp"
+                            android:src="@drawable/kik_white"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeFollower"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp">
+
+            <ImageView
+                android:layout_width="55dip"
+                android:layout_height="55dip"
+                android:layout_centerInParent="true"
+                android:src="@drawable/icon_like_heart"
+                android:id="@+id/imgHeartIcon"/>
+
+            <com.amplify.widgets.TextViewRegular
+                android:id="@+id/txtFollowersCnt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="578"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+</FrameLayout>

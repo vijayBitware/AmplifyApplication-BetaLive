@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/img_bg_login"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <com.amplify.utils.StatusBarView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/statusbar_transparent" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight=".66">
+
+        <ImageView
+            android:layout_width="270dip"
+            android:layout_height="270dip"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="115dp"
+            android:src="@drawable/logo_amplifytext" />
+
+        <!--<Button
+            android:id="@+id/btnCrash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="36dp"
+            android:text="Force crash" />-->
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/linearFbLogin"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_weight=".09"
+        android:background="@drawable/btn_blue"
+        android:gravity="center">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="35dip"
+                android:layout_height="25dip"
+                android:layout_marginLeft="40dp"
+                android:src="@drawable/icon_btn_facbook"
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
+
+
+        <com.amplify.widgets.TextViewRegular
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingLeft="45dp"
+            android:text="Log in with Facebook"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight=".3"
+        android:orientation="vertical">
+
+        <com.amplify.widgets.TextViewRegular
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="We never post on your wall"
+            android:textColor="@color/blue"
+            android:textSize="14sp" />
+
+        <com.amplify.widgets.TextViewRegular
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:gravity="center"
+            android:text="By continuing, you accept the"
+            android:textColor="@color/black"
+            android:textSize="10sp" />
+
+        <com.amplify.widgets.TextViewRegular
+            android:id="@+id/text_policy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Terms of Use and Privacy Policy"
+            android:textColor="@color/black"
+            android:textSize="10sp" />
+    </LinearLayout>
+</LinearLayout>
+
+
+

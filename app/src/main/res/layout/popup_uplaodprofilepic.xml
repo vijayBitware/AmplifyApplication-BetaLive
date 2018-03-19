@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/round_gray_corner"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linShowProfilePic"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/txtShowProfilePic"
+            android:layout_width="fill_parent"
+            android:layout_height="39dp"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="View Photo"
+            android:textColor="@color/blue"
+            android:textSize="16sp"/>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/blue"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtCamera"
+            android:layout_width="fill_parent"
+            android:layout_height="39dp"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="Take Photo"
+            android:textColor="@color/blue"
+            android:textSize="16sp"/>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/blue"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtGalery"
+            android:layout_width="fill_parent"
+            android:layout_height="39dp"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="Choose Existing"
+            android:textColor="@color/blue"
+            android:textSize="16sp"/>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/blue"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linDelete"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/txtDelete"
+            android:layout_width="fill_parent"
+            android:layout_height="39dp"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="Delete Photo"
+            android:textColor="@color/blue"
+            android:textSize="16sp"/>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/blue"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtCancelPopup"
+            android:layout_width="fill_parent"
+            android:layout_height="39dp"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="Cancel"
+            android:textColor="@color/blue"
+            android:textSize="16sp"/>
+    </LinearLayout>
+</LinearLayout>

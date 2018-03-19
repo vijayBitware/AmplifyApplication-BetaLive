@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_weight=".6"
+            android:layout_width="200dip"
+            android:layout_height="0dp"
+            android:src="@drawable/no_internet_new" />
+
+        <TextView
+            android:layout_weight=".1"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+
+            android:gravity="center"
+            android:text="Whoops!"
+            android:textColor="@color/blue"
+            android:textSize="27sp" />
+
+        <TextView
+            android:layout_weight=".05"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:gravity="center"
+            android:text="No internet connection found."
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_weight=".05"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+
+            android:gravity="center"
+            android:text="Check your connection and try again"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:layout_weight=".2"
+            android:id="@+id/ll_logout"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_gravity="center"
+                android:id="@+id/btnRetry"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/btn_pink"
+                android:gravity="center"
+                android:text="Retry"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

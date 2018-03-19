@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/popup_bkg"
+    android:minWidth="230dip"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.amplify.widgets.TextViewRegular
+                android:id="@+id/txt_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="Are you sure do you want to logout?"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+            <com.amplify.widgets.TextViewRegular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <com.amplify.widgets.TextViewBold
+            android:id="@+id/btn_yes"
+            android:layout_width="0dip"
+            android:layout_height="45dip"
+            android:layout_gravity="center"
+            android:layout_weight=".5"
+            android:background="@color/white"
+            android:gravity="center"
+            android:text="Ok"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="17sp" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="30dip"
+            android:layout_gravity="center"
+            android:layout_weight=".003"
+            android:background="@color/light_grey" />
+
+        <com.amplify.widgets.TextViewBold
+            android:id="@+id/btn_no"
+            android:layout_width="0dip"
+            android:layout_height="45dip"
+            android:layout_gravity="center"
+            android:layout_weight=".5"
+            android:background="@color/white"
+            android:gravity="center"
+            android:text="Cancel"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="17sp" />
+    </LinearLayout>
+</LinearLayout>
